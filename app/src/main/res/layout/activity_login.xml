@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_login"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_form"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:elevation="1dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#641C28"
+            android:text="@string/login"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            app:startIconDrawable="@drawable/username"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:id="@+id/edt_userlogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/huwenak_yellow"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/password"
+            android:layout_marginBottom="40dp">
+
+            <EditText
+                android:id="@+id/edt_passlogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/huwenak_yellow"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btnlogin"
+            android:theme="@style/btnLoginStyle"
+            android:text="Sign In"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/background_logo"
+        android:elevation="1dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_borderless"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"/>
+
+</RelativeLayout>

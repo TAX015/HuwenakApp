@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/huwenak_yellow"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/akun_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/huwenak_brown"
+            android:text="Nama"
+            app:drawableStartCompat="@drawable/icon_namabrown" />
+
+        <TextView
+            android:id="@+id/akun_branch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/huwenak_brown"
+            android:textSize="20sp"
+            android:text="Lokasi Cabang"
+            app:drawableStartCompat="@drawable/icon_branch" />
+
+        <TextView
+            android:id="@+id/akun_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/huwenak_brown"
+            android:textSize="20sp"
+            app:drawableStartCompat="@drawable/icon_status"
+            android:text="Status"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

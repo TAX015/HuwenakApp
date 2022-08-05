@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_transaksi">
+
+    <fragment
+        android:id="@+id/nav_transaksi"
+        android:name="com.itats.huwenakapp.ui.transaksi.TransaksiFragment"
+        android:label="Transaksi"
+        tools:layout="@layout/fragment_transaksi" />
+
+    <fragment
+        android:id="@+id/nav_kategori"
+        android:name="com.itats.huwenakapp.ui.kategori.KategoriFragment"
+        android:label="Kategori Menu"
+        tools:layout="@layout/fragment_kategori"/>
+
+    <fragment
+        android:id="@+id/nav_pesanan"
+        android:name="com.itats.huwenakapp.ui.pesanan.PesananFragment"
+        android:label="Pesanan"
+        tools:layout="@layout/fragment_pesanan" />
+
+    <fragment
+        android:id="@+id/nav_sejarah"
+        android:name="com.itats.huwenakapp.ui.sejarah.SejarahFragment"
+        android:label="Searah"
+        tools:layout="@layout/fragment_sejarah" />
+
+    <fragment
+        android:id="@+id/nav_inventory"
+        android:name="com.itats.huwenakapp.ui.inventory.InventoryFragment"
+        android:label="Inventory"
+        tools:layout="@layout/fragment_inventory"/>
+
+    <fragment
+        android:id="@+id/nav_akun"
+        android:name="com.itats.huwenakapp.ui.akun.AkunFragment"
+        android:label="Akun"
+        tools:layout="@layout/fragment_akun"/>
+
+    <fragment
+        android:id="@+id/nav_cabang"
+        android:name="com.itats.huwenakapp.ui.cabang.CabangFragment"
+        android:label="Cabang"
+        tools:layout="@layout/fragment_cabang"/>
+
+    <fragment
+        android:id="@+id/nav_laporan"
+        android:name="com.itats.huwenakapp.ui.laporan.LaporanFragment"
+        android:label="Laporan"
+        tools:layout="@layout/fragment_laporan"/>
+</navigation>

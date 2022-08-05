@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_background"
+    android:padding="20dp"
+    tools:context=".ui.kategori.KategoriTambah">
+
+    <LinearLayout
+        android:id="@+id/kategori_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:text="FORM KATEGORI"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="Nama kategori :"/>
+
+        <EditText
+            android:id="@+id/edt_kategorinama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Kategori"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Deskripsi :"/>
+
+        <EditText
+            android:id="@+id/edt_kategoridesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="100"
+            android:maxLines="4"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_kategoriadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/custom_btnselect"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textColor="@color/white"
+        android:text="submit"/>
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_background"
+    android:padding="20dp"
+    tools:context=".ui.cabang.CabangTambah">
+
+    <LinearLayout
+        android:id="@+id/cabang_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:text="FORM CABANG"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:hint="Nama Cabang">
+
+            <EditText
+                android:id="@+id/edt_cabangname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/black"
+            android:hint="Alamat Cabang">
+
+            <EditText
+                android:id="@+id/edt_cabangaddrs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cabang_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/cabang_form"
+        android:layout_toEndOf="@+id/btn_cabangpic"
+        android:textColor="@color/black"
+        android:text="Gambar"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cabangpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cabang_form"
+        android:layout_marginTop="15dp"
+        android:text="pilih gambar"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cabangadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/custom_btnselect"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textColor="@color/white"
+        android:text="submit"/>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/huwenak_yellow"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/pesanan_origin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/huwenak_brown"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Offline"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/huwenak_brown">
+
+            <TextView
+                android:id="@+id/pesanan_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"
+                android:layout_marginStart="5dp"
+                android:text="15:05:01"/>
+
+            <TextView
+                android:id="@+id/pesanan_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/white"
+                android:layout_marginEnd="5dp"
+                android:text="#AAAAA"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pesanan_order1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Terang Bulan x1"/>
+
+        <TextView
+            android:id="@+id/pesanan_order2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Martabak x1"/>
+
+        <TextView
+            android:id="@+id/pesanan_order3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:textColor="@color/black"
+            android:text=". . . . . . . "/>
+
+        <Button
+            android:id="@+id/pesanan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/icon_done"
+            android:text="Selesai"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:backgroundTint="@color/huwenak_yellow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/transaksilist_image"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/logo_borderless"/>
+
+        <TextView
+            android:id="@+id/transaksilist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/transaksilist_image"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Name"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/transaksi_btnsedang"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/transaksilist_image"
+            android:layout_below="@+id/transaksilist_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/transaksi_btnselector"
+            android:textColor="@drawable/transaksi_btnselectortext"
+            android:textSize="12sp"
+            android:text="sedang"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/transaksi_btnbesar"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/transaksi_btnsedang"
+            android:layout_below="@+id/transaksilist_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/transaksi_btnselector"
+            android:textColor="@drawable/transaksi_btnselectortext"
+            android:textSize="12sp"
+            android:text="besar"/>
+
+        <TextView
+            android:id="@+id/transaksilist_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/transaksilist_image"
+            android:layout_below="@+id/transaksi_btnsedang"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:text="Price"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/transaksi_btnmin"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toEndOf="@+id/transaksilist_image"
+            android:layout_below="@+id/transaksilist_price"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:text="-"
+            android:background="@color/huwenak_brown"/>
+
+        <EditText
+            android:id="@+id/transaksi_edtcount"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_toEndOf="@+id/transaksi_btnmin"
+            android:layout_below="@+id/transaksilist_price"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/transaksi_edtborder"
+            android:textSize="15sp"
+            android:inputType="number"
+            android:text="0"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/transaksi_btnplus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toEndOf="@+id/transaksi_edtcount"
+            android:layout_below="@+id/transaksilist_price"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="+"
+            android:background="@color/huwenak_brown"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/transaksi_btntambah"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/transaksilist_price"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_btn"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="Tambah"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/transaksi_btndel"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_toStartOf="@+id/transaksi_btntambah"
+            android:layout_below="@id/transaksilist_price"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_btn"
+            android:src="@drawable/icon_del"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

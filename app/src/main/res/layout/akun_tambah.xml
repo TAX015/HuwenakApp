@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_background"
+    android:padding="20dp"
+    tools:context=".ui.akun.AkunTambah">
+
+    <LinearLayout
+        android:id="@+id/akun_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:text="FORM AKUN"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:hint="Nama Lengkap">
+
+            <EditText
+                android:id="@+id/edt_akunname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="20dp"
+            android:hint="Username">
+
+            <EditText
+                android:id="@+id/edt_akunuser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="20dp"
+            android:hint="Password">
+
+            <EditText
+                android:id="@+id/edt_akunpass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_akunstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/akun_linear"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Status   :"/>
+
+    <RadioGroup
+        android:id="@+id/akun_radiog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/akun_linear"
+        android:layout_toEndOf="@+id/txt_akunstatus"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radio_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:buttonTint="@color/huwenak_brown"
+            android:text="Admin"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radio_staff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:buttonTint="@color/huwenak_brown"
+            android:checked="true"
+            android:text="Pegawai"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_akunbranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_akunstatus"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Cabang :"/>
+
+    <Spinner
+        android:id="@+id/spinner_akun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_akunstatus"
+        android:layout_toEndOf="@id/txt_akunbranch"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_akunadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_btnselect"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:textColor="@color/white"
+        android:text="Tambah Akun"/>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cabang_card"
+    app:cardCornerRadius="15dp"
+    android:layout_marginTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cabang_image"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:src="@drawable/logo_land"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/cabang_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/cabang_image"
+            android:background="#80000000"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Nama Lokasi"/>
+
+        <TextView
+            android:id="@+id/cabang_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cabang_image"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@color/huwenak_yellow"
+            android:textSize="16sp"
+            android:text="Alamat"
+            app:drawableStartCompat="@drawable/icon_branch" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
